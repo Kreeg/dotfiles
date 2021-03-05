@@ -55,7 +55,7 @@ cursor:
   unfocused_hollow: true
 
 shell:
-  program: /bin/zsh
+  program: /usr/local/bin/zsh
   args:
     - -l
     - -c
@@ -69,26 +69,8 @@ mouse:
       program: open
 
 key_bindings:
+  - { key: Left,     mods: Alt,     chars: "\x1bb"                       } # one word left
+  - { key: Right,    mods: Alt,     chars: "\x1bf"                       } # one word right
   - { key: Paste,                                       action: Paste          }
   - { key: Copy,                                        action: Copy           }
   - { key: L,         mods: Control,                    action: ClearLogNotice }
-  - { key: Left, mods: Shift, chars: "\x1b[1;2D" }
-  - { key: Left, mods: Control, chars: "\x1b[1;5D" }
-  - { key: Left, mods: Alt, chars: "\e[1;5D" }
-  - { key: Left, chars: "\x1b[D", mode: ~AppCursor }
-  - { key: Left, chars: "\x1bOD", mode: AppCursor }
-  - { key: Right, mods: Shift, chars: "\x1b[1;2C" }
-  - { key: Right, mods: Control, chars: "\x1b[1;5C" }
-  - { key: Right, mods: Alt, chars: "\e[1;5C" }
-  - { key: Right, chars: "\x1b[C", mode: ~AppCursor }
-  - { key: Right, chars: "\x1bOC", mode: AppCursor }
-  - { key: Up, mods: Shift, chars: "\x1b[1;2A" }
-  - { key: Up, mods: Control, chars: "\x1b[1;5A" }
-  - { key: Up, mods: Alt, chars: "\x1b[1;3A" }
-  - { key: Up, chars: "\x1b[A", mode: ~AppCursor }
-  - { key: Up, chars: "\x1bOA", mode: AppCursor }
-  - { key: Down, mods: Shift, chars: "\x1b[1;2B" }
-  - { key: Down, mods: Control, chars: "\x1b[1;5B" }
-  - { key: Down, mods: Alt, chars: "\x1b[1;3B" }
-  - { key: Down, chars: "\x1b[B", mode: ~AppCursor }
-  - { key: Down, chars: "\x1bOB", mode: AppCursor }
