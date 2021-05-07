@@ -55,12 +55,13 @@ cursor:
   unfocused_hollow: true
 
 shell:
-  program: /usr/local/bin/zsh
+  program: /usr/local/bin/tmux
   args:
-    - -l
-    - -c
-    - "tmux"
-
+    - new-session
+    - -A
+    - -D
+    - -s
+    - main
 mouse:
   hide_when_typing: false
 
