@@ -55,13 +55,11 @@ cursor:
   unfocused_hollow: true
 
 shell:
-  program: /usr/local/bin/tmux
+  program: /usr/local/bin/zsh
   args:
-    - new-session
-    - -A
-    - -D
-    - -s
-    - main
+    - -l
+    - -c
+    - "tmux attach || tmux"
 mouse:
   hide_when_typing: false
 

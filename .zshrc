@@ -8,7 +8,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 plugins=(
-	git
 	zsh-syntax-highlighting
 	zsh-autosuggestions
 	docker
@@ -17,7 +16,7 @@ plugins=(
 
 zstyle ':completion:*:*:docker:*' option-stacking yes
 zstyle ':completion:*:*:docker-*:*' option-stacking yes
-zstyle ':vcs_info:*' enable git
+#zstyle ':vcs_info:*' enable git
 
 source $ZSH/oh-my-zsh.sh
 
