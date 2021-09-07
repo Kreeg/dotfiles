@@ -4,8 +4,9 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="agnoster"
 TERM=xterm-256color
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 plugins=(
 	zsh-syntax-highlighting
@@ -21,7 +22,5 @@ zstyle ':completion:*:*:docker-*:*' option-stacking yes
 source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-
-export PATH="$PATH:$HOME/.rvm/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
