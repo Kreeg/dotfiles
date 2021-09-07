@@ -11,16 +11,16 @@ scrolling:
   multiplier: 3
 font:
   normal:
-    family: FiraCode Nerd Font
+    family: Fira Code
     style: Regular
   bold:
-    family: FiraCode Nerd Font
+    family: Fira Code
     style: Bold
   italic:
-    family: FiraCode Nerd Font
+    family: Fira Code
     style: Italic
   bold_italic:
-    family: FiraCode Nerd Font
+    family: Fira Code
     style: Bold Italic
   size: 16.0
   use_thin_strokes: true
@@ -62,10 +62,6 @@ shell:
     - "tmux attach || tmux"
 mouse:
   hide_when_typing: false
-
-  url:
-    launcher:
-      program: open
 
 key_bindings:
   - { key: Left,     mods: Alt,     chars: "\x1bb"                       } # one word left
