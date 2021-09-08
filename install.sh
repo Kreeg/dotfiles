@@ -3,6 +3,7 @@ brew install tmux
 brew install nvim
 brew install zsh
 brew install nvm
+brew install htop
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 brew install fzf
 curl -OL https://github.com/arl/gitmux/releases/download/v0.7.4/gitmux_0.7.4_macOS_amd64.tar.gz
