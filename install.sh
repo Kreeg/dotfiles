@@ -14,3 +14,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/
 curl -OL https://github.com/tonsky/FiraCode/releases/download/5.2/Fira_Code_v5.2.zip
 unzip Fira_Code_v5.2.zip
 mkdir $HOME/alacritty
+
+cd $HOME/.tmux/plugins/
+git clone git@github.com:tmux-plugins/tmux-prefix-highlight.git
+git clone git@github.com:tmux-plugins/tmux-sidebar.git
+git clone git@github.com:tmux-plugins/tmux-copycat.git
+git clone git@github.com:tmux-plugins/tmux-open.git
+git clone git@github.com:tmux-plugins/tmux-resurrect.git
+git clone git@github.com:tmux-plugins/tmux-net-speed.git
