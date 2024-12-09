@@ -81,7 +81,7 @@ multiplier = 3
 
 [terminal.shell]
 args = ["-l", "-c", "tmux attach || tmux"]
-program = "/usr/local/bin/zsh"
+program = "/opt/homebrew/bin/zsh"
 
 [window]
 decorations = "none"
