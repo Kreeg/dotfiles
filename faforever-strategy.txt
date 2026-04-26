@@ -1,0 +1,1 @@
+--filter-tcp=443,2053,2083,2087,2096,84 --hostlist=/opt/zapret/lists/faforever.txt  --dpi-desync=fake,multidisorder --dpi-desync-split-pos=1,midsld --dpi-desync-fooling=badsum --dpi-desync-fake-tls-mod=rnd,dupsid,sni=www.google.com --new
